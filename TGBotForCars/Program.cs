@@ -31,7 +31,7 @@ class Program
         );
 
         Console.WriteLine("Bot is running. Press Enter to shut it down.");
-        Console.ReadLine();
+        await Task.Delay(-1);
         cts.Cancel();
     }
 
